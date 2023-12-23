@@ -96,15 +96,20 @@ const cpyTxt_1 = document.querySelector("#firstHolder")
 const cpyTxt_2 = document.querySelector("#secondHolder")
 const generateBtn = document.querySelector("#mainBtn")
 
-const copy = (container) => {
+const copy = async (container) => {
   const input = container.querySelector("input")
   input.select()
-  document.execCommand("copy")
-  container.classList.add("active")
-  window.getSelection().removeAllRanges()
-  setTimeout(() => {
-    container.classList.remove("active")
-  }, 1000)
+  try {
+    document.execCommand("copy")
+    // await navigator.clipboard.writeText(input.value)
+    container.classList.add("active")
+    window.getSelection().removeAllRanges()
+    setTimeout(() => {
+      container.classList.remove("active")
+    }, 1000)
+  } catch (err) {
+    console.log("unable to copy text", err)
+  }
 }
 
 cpyTxt_1.querySelector("button").addEventListener("click", () => {

@@ -122,7 +122,7 @@ hr {
     background-color: #4adf86;
     border-radius: 6px;
     opacity: 0;
-    transition: opacity 0.5s ease-out;
+    transition: opacity 0.4s ease-out;
 
 /*
     transform-origin: left center;
@@ -142,7 +142,7 @@ hr {
     border-right: 8px solid #4adf86;
     border-bottom: 8px solid transparent;
     opacity: 0;
-    transition: opacity 0.1s ease-out;
+    transition: opacity 0.4s ease-out;
 
     /* transform-origin: right center;
     transform: scale(0);
