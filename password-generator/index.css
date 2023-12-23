@@ -1,0 +1,161 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1c1c1c;
+}
+
+body > div {
+  display: flex;
+  border-radius: 6px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color: #1f2937;
+  width: 550px;
+  height: 550px;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 40px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+h1 > span {
+  color: #4adf86;
+}
+
+p {
+  color: #d5d4d8;
+  font-size: 20px;
+  margin-bottom: 51px;
+}
+
+button {
+  padding: 9px 17px 9px 15px;
+  background-color: #4adf86;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #4cb777;
+  transform: scale(1.03);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+.container_1 > button {
+  margin-bottom: 35px;
+}
+
+hr {
+  border-color: #273549;
+  border-style: solid;
+  width: 446px;
+  height: 0px;
+  margin-bottom: 35px;
+}
+
+.container_2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#firstHolder,
+#secondHolder {
+    display: flex;
+    gap: 5px;
+    width: fit-content;
+    position: relative;
+}
+
+#firstHolder > input,
+#secondHolder > input {
+  display: inline-block;
+  width: 211px;
+  background-color: #273549;
+  border-radius: 6px;
+  color: #4adf86;
+  font-weight: 500;
+  font-size: 16px;
+  text-overflow: ellipsis;
+  line-height: 39px;
+  white-space: nowrap;
+  padding: 0px 10px;
+  overflow: hidden;
+  border: none;
+}
+
+#firstHolder > input:focus,
+#secondHolder > input:focus {
+  outline: none;
+}
+
+#firstHolder > button::before,
+#secondHolder > button::before {
+    content: "copied";
+    position: absolute;
+    right: -76px;
+    top: 3px;
+    padding: 8px 10px;
+    font-size: 15px;
+    font-weight: 100;
+    background-color: #4adf86;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+
+/*
+    transform-origin: left center;
+    transform: scale(0);
+    transition: transform 0.1s ease-out; */
+}
+
+#firstHolder > button::after,
+#secondHolder > button::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 11px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #4adf86;
+    border-bottom: 8px solid transparent;
+    opacity: 0;
+    transition: opacity 0.1s ease-out;
+
+    /* transform-origin: right center;
+    transform: scale(0);
+    transition: transform 0.1s ease-out; */
+}
+
+#firstHolder.active > button::before,
+#firstHolder.active > button::after,
+#secondHolder.active > button::before,
+#secondHolder.active > button::after {
+    opacity: 1;
+    transition: opacity 0.2s ease-in;
+
+    /* transform: scale(1);
+    transition: transform 0.2s ease-in; */
+}
