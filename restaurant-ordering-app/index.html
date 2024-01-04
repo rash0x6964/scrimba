@@ -1,9 +1,47 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-       <link rel="stylesheet" href="index.css">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-	<script src="index.js"></script>
+        <header>
+            <div class="container">
+                <h2>Rash's Diner</h2>
+                <p>The best burgers and pizzas in khouribga.</p>
+            </div>
+        </header>
+        <main>
+            <section id="list">
+                <ul id="mealList" class="container"></ul>
+            </section>
+            <section id="order">
+                <h3>Your order</h3>
+                <ul id="orderList">
+                    <li>
+                        <span>Pizza</span>
+                        <button>remove</button>
+                        <span>$14</span>
+                    </li>
+                    <li>
+                        <span>Pizza</span>
+                        <button>remove</button>
+                        <span class="price">$14</span>
+                    </li>
+                </ul>
+                <div>
+                    <span>Total price: </span>
+                    <span>$26</span>
+                </div>
+                <button id="orderBtn">Complete order</button>
+            </section>
+        </main>
+	<script src="index.js" type="module"></script>
     </body>
 </html>
 
