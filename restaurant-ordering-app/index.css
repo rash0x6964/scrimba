@@ -135,7 +135,7 @@ header > div > p {
 /* Form */
 
 form {
-    display: flex;
+    display: none;
     flex-direction: column;
     max-width: 524px;
     height: fit-content;
@@ -176,5 +176,20 @@ form > input[type = submit] {
     background-color: #16DB99;
     border: none;
     color: white;
+}
 
+.show {
+    display: flex;
+}
+
+#note {
+    background-color: #ECFDF5;
+    padding: 51px 60px;
+    color: #065F46;
+    border-radius: 3px;
+    border: none;
+    font-size: 32px;
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
 }

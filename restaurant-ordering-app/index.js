@@ -2,10 +2,12 @@ import { menuArray } from "./data.js"
 
 const mealList = document.getElementById("mealList")
 const order = document.getElementById("order")
+const form = document.querySelector("form")
 
 let ordersArray = []
 
 document.addEventListener("click", (e) => {
+	e.preventDefault()
   if (e.target.dataset.add) {
     handleAddClick(e.target.dataset.add)
   } else if (e.target.dataset.remove) {
@@ -60,11 +62,12 @@ function handleRemoveClick(id) {
 }
 
 function handleCompleteOrderClick() {
-
+	form.classList.add("show");
 }
 
 function handlePayClick() {
-	
+	order.innerHTML = '<div id="note">Thanks, James! Your order is on its way!<div>'
+	form.classList.remove("show");
 }
 
 mealList.innerHTML += menuArray
