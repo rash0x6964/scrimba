@@ -132,3 +132,49 @@ header > div > p {
     font-weight: bold;
 }
 
+/* Form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 524px;
+    height: fit-content;
+    background-color: white;
+    padding: 0px 20px 20px 20px;
+    box-shadow: 0px 0px 400px #8f8e8e;
+    position: fixed;
+    right: 40;
+    left: 40;
+    top: 40;
+    bottom: 40;
+    margin: auto;
+    border-radius: 4px;
+}
+
+form > h3 {
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    margin: 46px;
+}
+
+form > input {
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    padding: 16px;
+}
+
+form > input[type = text] {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 23px;
+    border: solid 1px #757575;
+}
+
+form > input[type = submit] {
+    margin-top: 23px;
+    background-color: #16DB99;
+    border: none;
+    color: white;
+
+}
