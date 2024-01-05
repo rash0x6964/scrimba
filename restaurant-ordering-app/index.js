@@ -10,7 +10,11 @@ document.addEventListener("click", (e) => {
     handleAddClick(e.target.dataset.add)
   } else if (e.target.dataset.remove) {
     handleRemoveClick(e.target.dataset.remove)
-  }
+  } else if (e.target.dataset.order) {
+    handleCompleteOrderClick()
+	} else if (e.target.dataset.pay) {
+		handlePayClick()
+	}
 })
 
 function renderOrder() {
@@ -41,7 +45,7 @@ function renderOrder() {
 				<span class="itemName">Total price: </span>
 				<span class="price">$${total}</span>
 		</div>
-		<button id="orderBtn">Complete order</button>
+		<button id="orderBtn" data-order="order">Complete order</button>
 	`
 }
 
@@ -53,6 +57,14 @@ function handleAddClick(id) {
 function handleRemoveClick(id) {
   ordersArray = ordersArray.filter((item) => item.id != id)
   renderOrder()
+}
+
+function handleCompleteOrderClick() {
+
+}
+
+function handlePayClick() {
+	
 }
 
 mealList.innerHTML += menuArray
