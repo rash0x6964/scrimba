@@ -26,7 +26,10 @@ function renderOrder() {
     })
     .join("")
 
-	const total = 0
+  const total = ordersArray.reduce(
+    (prev, curr) => parseInt(prev) + parseInt(curr.price),
+    0
+  )
 
   order.innerHTML = `
 		<h3>Your order</h3>
