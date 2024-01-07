@@ -66,7 +66,10 @@ function handleCompleteOrderClick() {
 }
 
 function handlePayClick() {
-	order.innerHTML = '<div id="note">Thanks, James! Your order is on its way!<div>'
+	console.log('cliced')
+	const paymentObj=  new FormData(form)
+	const name = paymentObj.get('name')
+	order.innerHTML = `<div id="note">Thanks, ${name}! Your order is on its way!<div>`
 	form.classList.remove("show");
 }
 
