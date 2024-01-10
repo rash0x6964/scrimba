@@ -42,13 +42,13 @@ ul > li {
 #heroPost > img {
     width: 100%;
     object-fit: cover;
-    position: relative;
 }
 
 #heroPost > div {
     position: absolute;
     left: 0;
     bottom: 0;
+    padding: 1.56em;
 }
 
 .date {
@@ -74,4 +74,27 @@ ul > li {
     font-size: 1rem;
     font-weight: 400;
     text-transform: capitalize;
+}
+
+#otherPost {
+    padding: 1.2em;
+}
+
+
+footer {
+    padding: 3.08em;
+    background-color: #202020;
+    text-align: center;
+}
+
+footer > p {
+    color: #ECECEC;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+footer > span {
+    color: #D7D7D7;
+    font-weight: 400;
+    font-size: 0.75rem;
 }
