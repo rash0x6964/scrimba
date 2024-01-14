@@ -52,6 +52,7 @@ ul > li {
 }
 
 .date {
+    display: inline-block;
     font-size: 0.75rem;
     font-weight: 400;
     margin-bottom: 0.67em;
@@ -70,15 +71,37 @@ h3, h2 {
     font-size: 2rem;
 }
 
-.discription {
+#heroPost > .discription {
     font-size: 1rem;
     font-weight: 400;
     text-transform: capitalize;
 }
 
-#otherPost {
+.card {
     padding: 1.2em;
 }
+
+.card > .discription {
+    color: #505050;
+    line-height: 125%;
+}
+
+.card > img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+/* .card > .date {
+    display: inline-block;
+    margin-bottom: 9px;
+} */
+
+
+
+
+
+
 
 
 footer {
