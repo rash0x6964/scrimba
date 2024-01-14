@@ -28,10 +28,49 @@ const posts = [
       "I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
   },
 	{
-    urlImg: "images/blog-image-01.png",
+    urlImg: "images/blog-image-04.png",
     date: "july 23,2022",
-    title: "Blog one",
+    title: "Blog X",
+    paragraph:
+      "I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
+  },
+  {
+    urlImg: "images/blog-image-05.png",
+    date: "july 23,2022",
+    title: "Blog X",
+    paragraph:
+      "I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
+  },
+  {
+    urlImg: "images/blog-image-06.png",
+    date: "july 23,2022",
+    title: "Blog X",
     paragraph:
       "I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.",
   },
 ]
+let heroPost = document.getElementById("heroPost")
+let postHolder = document.getElementById("otherPost")
+
+heroPost.innerHTML += `
+    <img src="${posts[0].urlImg}" alt="">
+    <div>
+      <span class="date">${posts[0].date}</span>
+      <h3>${posts[0].title}</h3>
+      <p class="discription">${posts[0].paragraph}</p>
+    </div>
+`
+
+posts.shift();
+
+let cards = posts.map((el, index) => `
+    <div class="card">
+      <img src="${el.urlImg}" alt="">
+      <span class="date">${el.date}</span>
+      <h3>${el.title}</h3>
+      <p class="discription">${el.paragraph}</p>
+    </div>
+  `
+)
+
+postHolder.innerHTML += cards.join("")
