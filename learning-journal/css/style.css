@@ -1,101 +1,94 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Source Sans 3', sans-serif;
-    list-style: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Source Sans 3', sans-serif;
+	list-style: none;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.538em;
-    align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 1.538em;
+	align-items: center;
 }
 
 #logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3px;
 }
 
 #logo > span {
-    font-size: 0.85rem;
-    text-transform: capitalize;
-    font-weight: 700;
+	font-size: 0.85rem;
+	text-transform: capitalize;
+	font-weight: 700;
 }
 
 ul > li {
-    display: inline-block;
-    font-size: 0.75rem;
-    font-weight: 600;
-    margin-left: 2.58em;
-    text-transform: uppercase;
+	display: inline-block;
+	font-size: 0.75rem;
+	font-weight: 600;
+	margin-left: 2.58em;
+	text-transform: uppercase;
 }
 
-#heroPost {
-    color: white;
-    position: relative;
+
+/*============== grid ============*/
+
+.discription {
+	font-size: 1rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 125%;
 }
 
-#heroPost > img {
-    width: 100%;
-    object-fit: cover;
-}
-
-#heroPost > div {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    padding: 1.56em;
+img {
+	width: 100%;
+	object-fit: cover;
 }
 
 .date {
-    display: inline-block;
-    font-size: 0.75rem;
-    font-weight: 400;
-    margin-bottom: 0.67em;
-    text-transform: uppercase;
+	display: inline-block;
+	font-size: 0.75rem;
+	font-weight: 400;
+	margin-bottom: 0.67em;
+	text-transform: uppercase;
 }
 
-h3, h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-bottom: 0.25em;
-    line-height: 108%;
-    text-transform: capitalize;
+h2 {
+	font-weight: 700;
+	margin-bottom: 0.25em;
+	line-height: 108%;
+	text-transform: capitalize;
 }
 
-#heroPost > div > h2 {
-    font-size: 2rem;
+.heroPost {
+	position: relative;
+	color: white;
 }
 
-#heroPost > .discription {
-    font-size: 1rem;
-    font-weight: 400;
-    text-transform: capitalize;
+.heroPost > div {
+	position: absolute;
+	display: inline-block;
+	left: 0;
+	bottom: 0;
+	padding: 1.56em;
+}
+
+.heroPost > div > h2 {
+	font-size: 1.5rem;
 }
 
 .card {
-    padding: 1.2em;
-}
-
-.card > .discription {
-    color: #505050;
-    line-height: 125%;
+	color: #505050;
+  margin: 1.2em;
 }
 
 .card > img {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 3px;
+	border-radius: 3px;
 }
-
-/* .card > .date {
-    display: inline-block;
-    margin-bottom: 9px;
-} */
 
 
 
