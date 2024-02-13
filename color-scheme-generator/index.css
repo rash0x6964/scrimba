@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 12px;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+}
+
+.container {
+    background-color: #FFFFFF;
+}
+
+.container #header {
+    padding: 0.7em;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+#colorPicker {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 3px solid #D1D5DB;
+    padding: 0;
+    align-self: center;
+    font-size: 16px;
+}
+
+#header > select {
+    padding: 0.5em 0.7em;
+    border: 1px solid #D1D5DB;
+    border-radius: 5px;
+    flex-grow: 1;
+}
+
+/* .header > select > option {
+    padding-top: 10px;
+} */
+
+#getColorBtn {
+    padding: 0.5em 0.7em;
+    background-color: transparent;
+    border: 1px solid #D1D5DB;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#getColorBtn:hover {
+    background-color: #FBAB7E;
+    color: #FFFFFF;
+}
+
+#body {
+    height: 400px;
+    display: flex;
+}
+
+#body > div {
+    height: 100%;
+    width: 100%;
+}
+
+#footer {
+    display: flex;
+}
+
+#footer > div {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* stuff */
+::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+::-webkit-color-swatch{
+    border: 0;
+    border-radius: 0;
+}
+
+::-moz-color-swatch,
+::-moz-focus-inner{
+    border: 0;
+}
+
+::-moz-focus-inner{
+    padding: 0;
+}
